@@ -13,7 +13,8 @@ workflows:
           executor: java17
     triggers:
       - schedule:
-          cron: "0 8,16,24 * * *"
+          cron: > 
+            "0 */8 * * *"
           filters:
             branches:
               only:
