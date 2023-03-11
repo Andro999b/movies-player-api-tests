@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "pattern": "https://ashdi\\.vip/vod/\\d+"
+    },
+    "extractor": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "ashdi"
+        }
+      }
+    },
+    "hls": {
+      "const": true
+    }
+  },
+  "required": [
+    "hls"
+  ]
+}

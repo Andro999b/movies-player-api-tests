@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "urls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string",
+            "pattern": "//kodik\\.info/[(video)|(seria)]{1,}/\\d+/[a-z0-9]+/[0-9]+p\\?translations=false&min_age=[0-9]+"
+          },
+          "audio": {
+            "type": "string",
+            "minLength": 1
+          },
+          "extractor": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "const": "animego_kodik"
+              }
+            }
+          },
+          "hls": {
+            "const": true
+          }
+        },
+        "required": [
+          "audio", "hls", "url", "extractor"
+        ]
+      },
+      "minItems": 1
+    }
+  }
+}

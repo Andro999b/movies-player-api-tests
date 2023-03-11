@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "allOf": [
+    {
+      "$ref": "../base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "asyncSource": {
+                "type": "object",
+                "properties": {
+                  "sourceId": {
+                    "type": "string",
+                    "pattern": "[a-z0-9]+"
+                  },
+                  "params": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "const": "serail"
+                      },
+                      "s": {
+                        "type": ["string", "integer"],
+                        "pattern": "\\d+"
+                      },
+                      "e": {
+                        "type": ["string", "integer"],
+                        "pattern": "\\d+"
+                      }
+                    },
+                    "required": [
+                      "type",
+                      "s",
+                      "e"
+                    ]
+                  }
+                },
+                "required": [
+                  "sourceId",
+                  "params"
+                ]
+              }
+            },
+            "required": [
+              "path",
+              "asyncSource"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

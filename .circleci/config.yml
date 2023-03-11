@@ -1,0 +1,20 @@
+version: 2.1
+orbs:
+  gradle: circleci/gradle@3.0.0
+executors:
+  java17:
+    docker:
+      - image: cimg/openjdk:17.0
+workflows:
+  version: 2
+  periodic:
+    jobs:
+      - gradle/test:
+          executor: java17
+    triggers:
+      - schedule:
+          cron: "0 */8 * * *"
+          filters:
+            branches:
+              only:
+                - main

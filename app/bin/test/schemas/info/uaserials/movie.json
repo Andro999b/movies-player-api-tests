@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "allOf": [
+    {
+      "$ref": "../base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "urls": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "url": {
+                      "type": "string",
+                      "pattern": "^https://tortuga\\.wtf/vod/[0-9]+$"
+                    },
+                    "hls": {
+                      "const": true
+                    },
+                    "extractor": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "const": "m3u8proxy"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "url",
+                    "hls",
+                    "extractor"
+                  ]
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "urls"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

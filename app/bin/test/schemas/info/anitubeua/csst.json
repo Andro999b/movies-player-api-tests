@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "url": {
+      "type": "string",
+      "pattern": "https://csst\\.online/embed/\\d+"
+    },
+    "extractor": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "const": "mp4local"
+        }
+      }
+    }
+  }
+}

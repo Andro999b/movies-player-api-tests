@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "allOf": [
+    {
+      "$ref": "../base.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "asyncSource": {
+                "type": "object",
+                "properties": {
+                  "sourceId": {
+                    "type": "integer"
+                  },
+                  "params": {
+                    "type": "object",
+                    "properties": {
+                      "ep": {
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "minItems": 2
+        }
+      }
+    }
+  ]
+}

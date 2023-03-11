@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "params": {
+      "type": "object",
+      "properties": {
+        "thash": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tid": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ttype": {
+          "enum": [
+            "video",
+            "season"
+          ]
+        }
+      },
+      "required": [
+        "thash",
+        "ttype",
+        "tid"
+      ]
+    }
+  },
+  "required": [
+    "params"
+  ]
+}
