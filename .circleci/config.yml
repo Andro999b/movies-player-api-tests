@@ -13,8 +13,12 @@ workflows:
           executor: java17
     triggers:
       - schedule:
-          cron: "* 0,6,12,18 * * *"
+          cron: "* 8 * * *"
           filters:
             branches:
               only:
                 - main
+  manual:
+    jobs:
+      - gradle/test:
+          executor: java17
