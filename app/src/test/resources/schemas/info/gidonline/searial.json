@@ -23,7 +23,7 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "const": "serail"
+                        "const": "serial"
                       },
                       "s": {
                         "type": ["string", "integer"],
