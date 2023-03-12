@@ -11,6 +11,8 @@ workflows:
     jobs:
       - gradle/test:
           executor: java17
+          test_results_path: app/build/test-results/
+          reports_path: app/build/reports/
     triggers:
       - schedule:
           cron: "* 8 * * *"
@@ -22,3 +24,5 @@ workflows:
     jobs:
       - gradle/test:
           executor: java17
+          test_results_path: app/build/test-results/
+          reports_path: app/build/reports/
