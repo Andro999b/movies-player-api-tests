@@ -6,6 +6,9 @@ on:
     - cron: '0 0,8,16 * * *' 
 
 jobs:
+  permissions:
+    checks: write
+    pull-requests: write
   build:
     runs-on: ubuntu-latest
     steps:
