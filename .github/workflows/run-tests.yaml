@@ -30,10 +30,16 @@ jobs:
       #   if: always()
       #   with:
       #     files: app/build/test-results/**/*.xml
-      - name: Test Report
+      - name: Tests Report
         uses: dorny/test-reporter@v1
         if: always()
         with:
-          name: Test Report           
+          name: Tests Report           
           path: app/build/test-results/**/*.xml    
           reporter: java-junit
+      - name: Upload Tests Summary
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: tests-summary
+          path: app/build/reports/
