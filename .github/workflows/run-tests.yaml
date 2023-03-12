@@ -25,8 +25,15 @@ jobs:
         uses:  gradle/gradle-build-action@v2
         with:
           arguments: test
-      - name: Publish Test Results
-        uses: EnricoMi/publish-unit-test-result-action@v2
+      # - name: Publish Test Results
+      #   uses: EnricoMi/publish-unit-test-result-action@v2
+      #   if: always()
+      #   with:
+      #     files: app/build/test-results/**/*.xml
+      - name: Test Report
+        uses: dorny/test-reporter@v1
         if: always()
         with:
-          files: app/build/test-results/**/*.xml
+          name: Test Report           
+          path: app/build/test-results/**/*.xml    
+          reporter: java-junit
