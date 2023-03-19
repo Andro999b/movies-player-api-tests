@@ -23,6 +23,10 @@
                     },
                     "quality": {
                       "enum": [ 0, 240, 360, 480, 720, 1080 ]
+                    },
+                    "audio": {
+                      "type": "string",
+                      "minLength": 1
                     }
                   },
                   "required": [

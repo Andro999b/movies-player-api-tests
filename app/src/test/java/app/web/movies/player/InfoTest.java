@@ -40,6 +40,8 @@ public class InfoTest {
       "kinogo,17293-project-blue-book_1-2-sezon,kinogo/variant1",
       "kinogo,5907-terminator-1984_21_45_54,kinogo/variant2-single", 
       "kinogo,34365-molodost-2015,kinogo/variant2", 
+      "videocdn,tv-series_1914,playerjs/hls-path", 
+      "videocdn,movies_18314,playerjs/hls", 
   })
   public void shouldReturnsValidsPlaylist(String provider, String id, String schema) {
     if (schema == null) {

@@ -12,7 +12,7 @@
     },
     "image": {
       "type": "string",
-      "pattern": "^https?://(?:www\\.)?(?:[\\w-]+\\.)+[a-z]{2,}(?:/{1,2}[^/?#]+)+\\.(?:jpg|jpeg|gif|png|webp)$"
+      "pattern": "^https?://(?:www\\.)?(?:[\\w-]+\\.)+[a-z]{2,}(?:/{1,2}[^/#]+)+\\.(?:jpg|jpeg|gif|png|webp)$"
     },
     "files": {
       "type": "array",
