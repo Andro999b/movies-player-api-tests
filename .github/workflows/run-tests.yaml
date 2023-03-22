@@ -27,10 +27,17 @@ jobs:
         uses:  gradle/gradle-build-action@v2
         with:
           arguments: test
-      - name: Test Summary
+      - name: Test Report
         uses: test-summary/action@v2
         with:
           paths: app/build/test-results/**/*.xml
+          output: test-report.md
+        if: always()
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: test-report.md
         if: always()
       - name: Upload Tests Summary
         uses: actions/upload-artifact@v3
