@@ -10,7 +10,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import io.restassured.RestAssured;
 
-import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.matchesRegex;
 
 public class ExtractTest {
