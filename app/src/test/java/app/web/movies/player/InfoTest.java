@@ -1,5 +1,9 @@
 package app.web.movies.player;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+
+import static org.hamcrest.Matchers.*;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -43,7 +47,7 @@ public class InfoTest {
       "videocdn,imdb_id-tt6959064,playerjs/hls-path", 
       "videocdn,imdb_id-tt0098321,playerjs/hls", 
   })
-  public void shouldReturnsValidsPlaylist(String provider, String id, String schema) {
+  public void shouldReturnsValidsPlaylist(String provider, String id, String schema) throws UnsupportedEncodingException {
     if (schema == null) {
       schema = provider;
     }
@@ -59,6 +63,8 @@ public class InfoTest {
         .then()
         .log().all()
         .statusCode(200)
-        .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/info/" + schema + ".json"));
+        .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/info/" + schema + ".json"))
+        .body("id", is(URLEncoder.encode(id, "utf-8")))
+        .body("provider", is(provider));
   }
 }

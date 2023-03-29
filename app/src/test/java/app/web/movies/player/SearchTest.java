@@ -2,6 +2,8 @@ package app.web.movies.player;
 
 import io.restassured.module.jsv.JsonSchemaValidator;
 
+import static org.hamcrest.Matchers.*;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -44,6 +46,7 @@ class SearchTest {
         .then()
         .log().all()
         .statusCode(200)
-        .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/search.json"));
+        .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schemas/search.json"))
+        .body("provider", everyItem(is(provider)));
   }
 }
