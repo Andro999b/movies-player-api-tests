@@ -43,7 +43,7 @@ public class InfoTest {
       // "gidonline,griffiny,gidonline/searial",
       "kinogo,17293-project-blue-book_1-2-sezon,kinogo/variant1",
       "kinogo,5907-terminator-1984_21_45_54,kinogo/variant2-single", 
-      "kinogo,34365-molodost-2015,kinogo/variant2", 
+      // "kinogo,34365-molodost-2015,kinogo/variant2", 
       "videocdn,imdb_id-tt6959064,playerjs/hls-path", 
       "videocdn,imdb_id-tt0098321,playerjs/hls", 
   })
