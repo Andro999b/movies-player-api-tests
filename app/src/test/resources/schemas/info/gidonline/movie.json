@@ -23,7 +23,7 @@
                     "type": "object",
                     "properties": {
                       "type": {
-                        "const": "movie"
+                        "enum": ["movie", "embed"]
                       }
                     },
                     "required": [
