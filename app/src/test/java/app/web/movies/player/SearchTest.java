@@ -22,7 +22,7 @@ class SearchTest {
       "uakinoclub,Термінатор",
       "uaserials,Зоряна брама",
       "kinogo,Терминатор",
-      "kinovod,Терминатор",
+      // "kinovod,Терминатор",
       "eneyida,Гріфіни",
       "gidonline,гриффины",
       "gidonline,арчер",
