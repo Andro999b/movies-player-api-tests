@@ -19,7 +19,7 @@
                   "properties": {
                     "url": {
                       "type": "string",
-                      "pattern": "^https://[a-z0-9\\.]+(?:/[^/?#]+)+\\.mp4\\?dn=.+\\.mp4$"
+                      "pattern": "^https://[a-z0-9\\.\\-]+(?:/[^/?#]+)+\\.mp4\\?dn=.+\\.mp4$"
                     },
                     "quality": {
                       "enum": [ 0, 240, 360, 480, 720, 1080 ]

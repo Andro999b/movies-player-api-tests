@@ -19,7 +19,7 @@
                   "properties": {
                     "url": {
                       "type": "string",
-                      "pattern": "^https://[a-z0-9\\.]+(?:/[^/?#]+)+\\.m3u8$"
+                      "pattern": "^https://[a-z0-9\\.\\-]+(?:/[^/?#]+)+\\.m3u8$"
                     },
                     "hls": {
                       "const": true
