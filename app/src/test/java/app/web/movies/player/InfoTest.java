@@ -31,6 +31,8 @@ public class InfoTest {
       "animego,death-note-v2-95,animego/multiple",
       "anitubeua,3342-banana-fish,anitubeua/playlist",
       "anitubeua,2816-akademya-yunih-vdom-little-witch-academia-,anitubeua/playlist",
+      "anitubeua,4304-suzume-no-tojimari,anitubeua/playlist",
+      "anitubeua,4110-chainsaw-man,anitubeua/playlist",
       "uafilmtv,234-mertv-jak-ja,playerjs/hls-path",
       "uafilmtv,10191-pivdenniy-park-postkovid-kovid-povertayetsya,playerjs/hls",
       // "kinovod,/film/2164-gorod-grehov,playerjs/hls",

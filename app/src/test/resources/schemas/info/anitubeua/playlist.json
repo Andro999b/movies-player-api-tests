@@ -40,6 +40,9 @@
                         },
                         {
                           "$ref": "svideo.json"
+                        },
+                        {
+                          "$ref": "tortuga.json"
                         }
                       ]
                     }
