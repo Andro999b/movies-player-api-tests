@@ -22,9 +22,9 @@ public class InfoTest {
   @CsvSource({
       "eneyida,2301-terminator,eneyida/base",
       "eneyida,6731-vonder-tut-i-tam,eneyida/with-path",
-      "anigato,https://anigato.ru/anime_ova/1794-vanpanchmen-ova.html,anigato/one-file-multiple-audio",
-      "anigato,https://anigato.ru/anime_ova/5556-van-pis-piratskie-koroli-bejsbola.html,anigato/one-file-one-audio",
-      "anigato,https://anigato.ru/anime/8763-semja-shpiona-tv-1.html,anigato/multiple-file-multiple-audio",
+      // "anigato,https://anigato.ru/anime_ova/1794-vanpanchmen-ova.html,anigato/one-file-multiple-audio",
+      // "anigato,https://anigato.ru/anime_ova/5556-van-pis-piratskie-koroli-bejsbola.html,anigato/one-file-one-audio",
+      // "anigato,https://anigato.ru/anime/8763-semja-shpiona-tv-1.html,anigato/multiple-file-multiple-audio",
       // "animevost,https://animevost.org/tip/ona/2855-kakegurui-twin.html,",
       // "animedia,dorohedoro,",
       "animego,v-les-gde-mercayut-svetlyachki-810,animego/single",

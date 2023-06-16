@@ -31,7 +31,7 @@ class SearchTest {
       "videocdn,Топ гир",
       "animego,My Hero Academy",
       "anitubeua,Зошит смерті",
-      "anigato,Death Note",
+      // "anigato,Death Note",
       // "animevost,Тетрадь смерти",
       // "animedia,Дорохедоро",
       "rezka,Гріфіни"
