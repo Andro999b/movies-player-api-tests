@@ -31,6 +31,8 @@ class SearchTest {
       "videocdn,Топ гир",
       "animego,My Hero Academy",
       "anitubeua,Зошит смерті",
+      "animelib,намбака",
+      "animeuaclub,шпигун",
       // "anigato,Death Note",
       // "animevost,Тетрадь смерти",
       // "animedia,Дорохедоро",

@@ -33,6 +33,7 @@ public class InfoTest {
       "anitubeua,2816-akademya-yunih-vdom-little-witch-academia-,anitubeua/playlist",
       "anitubeua,4304-suzume-no-tojimari,anitubeua/playlist",
       "anitubeua,4110-chainsaw-man,anitubeua/playlist",
+      "animeuaclub,3722-spy-x-family-2,playerjs/hls",
       "uafilmtv,234-mertv-jak-ja,playerjs/hls-path",
       "uafilmtv,10191-pivdenniy-park-postkovid-kovid-povertayetsya,playerjs/hls",
       "uaserials,196-zoryana-brama-sezon-1,uaserials/tv-show",
