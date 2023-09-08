@@ -51,8 +51,7 @@
                   },
                   "required": [
                     "url",
-                    "hls",
-                    "audio"
+                    "hls"
                   ]
                 },
                 "minItems": 1
