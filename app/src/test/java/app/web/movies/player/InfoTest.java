@@ -43,8 +43,8 @@ public class InfoTest {
       "uakinoclub,https://uakino.club/animeukr/anime-series/15231-kberpank-t-scho-bzhat-po-krayu-1-sezon.html,uakinoclub/v2",
       "gidonline,terminator,gidonline/movie",
       "gidonline,griffiny,gidonline/searial",
-      "kinogo,5907-terminator-1984_21_45_54,kinogo/variant1", 
-      "kinogo,25073-what-we-do-in-the-shadows_2014,kinogo/variant1", 
+      "kinogo,5907-terminator-1984_21_45_54,kinogo/variant2-single", 
+      "kinogo,25073-what-we-do-in-the-shadows_2014,kinogo/variant2-single", 
       "videocdn,imdb_id-tt6959064,playerjs/hls-path", 
       "videocdn,imdb_id-tt0098321,playerjs/hls", 
   })
