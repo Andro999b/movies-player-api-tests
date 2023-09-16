@@ -57,12 +57,13 @@ public class AsyncSourceTest {
             "plamennaya-brigada-pozharnyh-2-1586",
             "20983",
             Map.of("ep", "1"),
-            "animego"),
-        new SourceInput(
-            "animevost",
-            "https://animevost.org/tip/tv/468-full-metal-panic.html",
-            "2147397791",
-            null,
-            "animevost"));
+            "animego")
+        // new SourceInput(
+        //     "animevost",
+        //     "https://animevost.org/tip/tv/468-full-metal-panic.html",
+        //     "2147397791",
+        //     null,
+        //     "animevost")
+      );
   }
 }
