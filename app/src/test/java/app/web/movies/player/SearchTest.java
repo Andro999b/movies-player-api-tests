@@ -34,7 +34,7 @@ class SearchTest {
       "animelib,намбака",
       "animeuaclub,шпигун",
       // "anigato,Death Note",
-      // "animevost,Тетрадь смерти",
+      "animevost,Тетрадь смерти",
       // "animedia,Дорохедоро",
       "rezka,Гріфіни"
   })
