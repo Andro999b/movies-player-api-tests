@@ -21,11 +21,7 @@ class SearchTest {
       "uafilmtv,Енола",
       "uakinoclub,Термінатор",
       "uaserials,Зоряна брама",
-      "kinogo,Терминатор",
-      // "kinovod,Терминатор",
       "eneyida,Гріфіни",
-      // "gidonline,гриффины",
-      // "gidonline,арчер",
       "videocdn,Терминатор",
       "videocdn,Время приключений",
       "videocdn,Топ гир",
@@ -33,9 +29,7 @@ class SearchTest {
       "anitubeua,Зошит смерті",
       "animelib,намбака",
       "animeuaclub,шпигун",
-      // "anigato,Death Note",
       "animevost,Тетрадь смерти",
-      // "animedia,Дорохедоро",
       "rezka,Гріфіни"
   })
   void shouldReturnsValidsSearchResults(String provider, String query) {

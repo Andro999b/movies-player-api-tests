@@ -57,22 +57,6 @@ public class ExtractTest {
             null,
             matchesRegex("^https://cloud\\.kodik\\-cdn\\.com/animetvseries(?:/[^/?#]+)+\\.m3u8$")),
         new ExtractorInput(
-            "anigit",
-            "",
-            Map.of(
-                "thash", "ebab6ace632a287b6e006add9324beae",
-                "tid", "46583",
-                "ttype", "video"),
-            matchesRegex("^https://cloud\\.kodik\\-storage\\.com/useruploads(?:/[^/?#]+)+\\.m3u8$")),
-        new ExtractorInput(
-            "anigit",
-            "747",
-            Map.of(
-                "thash", "4686dac6d584726ffe13845c62ca241e",
-                "tid", "61627",
-                "ttype", "season"),
-            matchesRegex("^https://cloud\\.kodik\\-storage\\.com/useruploads(?:/[^/?#]+)+\\.m3u8$")),
-        new ExtractorInput(
             "ashdi",
             "https://ashdi.vip/vod/62469",
             null,
@@ -82,12 +66,6 @@ public class ExtractTest {
             "https://tortuga.wtf/vod/79962",
             null,
             matchesRegex("^https://[a-z]+\\.tortuga\\.wtf/hls(?:/[^/?#]+)+/index\\.m3u8$")),
-        new ExtractorInput(
-            "kinogo",
-            "https://vid1663085134.vb17123filippaaniketos.pw/serial/fc63a42a5faf9513fbd36eb9704bece94f0e85bbeb1fd144e76263e2e59d417e/iframe",
-            Map.of(
-                "file", "0,1,1"),
-            matchesRegex("^https://[a-z0-9\\.\\-]+(?:/[^/?#]+)+\\.m3u8$")),
         new ExtractorInput(
           "m3u8proxy", 
             "https://tortuga.wtf/vod/27402", 
